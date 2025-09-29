@@ -1,5 +1,15 @@
 # GitOps for API management with Gravitee and ArgoCD
 
+### Personal Notes - Kaiwalya
+- Spin up apim & managment containers
+- Start kind/minikube/kubernetes cluster
+- Install gko using helm
+- apply management context
+- Install argocd
+- Configure it to the repo using gui or cli
+- make changes to definition on pointed repo and start managing
+---
+
 GitOps for API management, sometimes known as APIOps, refers to the use of sofware development practices to implement your company's API management strategy. This way, you can expect increased levels of automation, reliability, and scale. 
 
 This approach is particularly well suited to being impemented in conjunction with Kubernetes. Key parts of this approach are:
