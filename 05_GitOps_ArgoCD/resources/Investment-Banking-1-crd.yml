@@ -5,6 +5,9 @@ metadata:
   name: "investment-banking"
 spec:
   name: "Investment Banking"
+  contextRef: 
+    name: "management-context-1"
+    namespace: "default"
   version: "1"
   description: "Investment Banking APIs."
   visibility: "PRIVATE"

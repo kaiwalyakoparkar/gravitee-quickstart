@@ -5,6 +5,9 @@ metadata:
   name: "corporate-banking-api"
 spec:
   name: "Corporate, Commercial & International Banking APIs"
+  contextRef: 
+    name: "management-context-1"
+    namespace: "default"
   version: "1"
   description: "Corporate, Commercial & International Banking."
   visibility: "PRIVATE"

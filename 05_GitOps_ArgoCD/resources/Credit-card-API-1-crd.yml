@@ -6,6 +6,9 @@ metadata:
 spec:
   name: "Credit card API"
   version: "1"
+  contextRef: 
+    name: "management-context-1"
+    namespace: "default"
   description: "This API was originally created manually in the console."
   visibility: "PRIVATE"
   gravitee: "2.0.0"
