@@ -1,0 +1,25 @@
+apiVersion: gravitee.io/v1alpha1
+kind: ApiDefinition
+metadata:
+  name: echo-api-declarative
+spec:
+  name: "Echo API Declarative"
+  contextRef: 
+    name: "management-context-1"
+    namespace: "default"
+  version: "1"
+  state: "STARTED"
+  lifecycle_state: "UNPUBLISHED"
+  description: "Gravitee Kubernetes Operator sample"
+  local: false
+  plans:
+    - name: "KEY_LESS"
+      description: "FREE"
+      security: "KEY_LESS"
+  proxy:
+    virtual_hosts:
+      - path: "/echo-api"
+    groups:
+      - endpoints:
+          - name: "Default"
+            target: "https://api.gravitee.io/echo"
